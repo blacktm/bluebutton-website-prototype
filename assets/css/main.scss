@@ -1,0 +1,88 @@
+---
+# Main CSS Styles: all styles are compiled to this file
+---
+
+@import "template/colors",
+        "template/table",
+        "template/syntax-highlighting",
+        "template";
+
+/* Custom Styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+header.site-header {
+  background: #137fcd;
+  font-weight: 600;
+}
+
+.warning {
+  padding: 4px 0;
+  background: #ffeea1;
+}
+
+.usa-disclaimer {
+  background-color: #f1f1f1;
+  font-size: 14px;
+  padding: 4px 0;
+  
+  img {
+    margin-right: 4px;
+  }
+}
+
+.home {
+  
+  .main {
+    padding-top: 0;
+    margin-bottom: 40px;
+    
+    .content {
+      max-width: 560px;
+    }
+  }
+  
+  .site-logo {
+    visibility: hidden;
+  }
+  
+  .banner {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 25px;
+    color: #fff;
+    
+    background: #137fcd;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#137fcd', endColorstr='#00a5ea');
+    background: linear-gradient(#137fcd, #00a5ea);
+    
+    img {
+      width: 125px;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+    
+    h2 {
+      margin: 8px 0 0 0;
+      font-size: 26px;
+      font-weight: 300;
+    }
+  }
+  
+  hr {
+    margin: 30px 0;
+  }
+}

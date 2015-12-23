@@ -1,0 +1,60 @@
+# Site settings
+title: Blue Button
+description: > # this means to ignore newlines until "baseurl:"
+  Blue Button
+baseurl: ""
+url: "http://bluebutton.healthit.gov"
+
+# Header
+header:
+  logo_text: Blue Button
+  logo_img: logo.svg
+  nav:
+    - text: Patients
+      link: /patients
+    - text: Healthcare
+      link: /healthcare
+    - text: Developers
+      link: /developers
+    - text: News
+      link: /news
+
+# Pages
+anchors: false
+
+# Edit pages
+edit_page:
+  # enabled: true  # Enabled by default for pages and posts
+  text: "Improve this page »"
+  github:
+    author: blue-button
+    repo:   blue-button.github.io
+    branch: gh-pages
+
+# Posts
+posts_path: /news
+permalink: "/news/:year/:month/:day/:title"
+
+# Pagination
+paginate: 5
+paginate_path: "/news/page:num"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: [hard_wrap, tables, highlight]
+
+# Plugins
+gems: [jekyll-paginate]
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: template/page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: template/post
