@@ -48,7 +48,7 @@ header.site-header {
     margin-bottom: 40px;
     
     .content {
-      max-width: 560px;
+      max-width: 540px;
     }
   }
   
@@ -84,5 +84,153 @@ header.site-header {
   
   hr {
     margin: 30px 0;
+  }
+  
+  .overview {
+    font-size: 18px;
+    text-align: center;
+    
+    .get-started {
+      font-size: 26px;
+    }
+  }
+}
+
+.psa-videos {
+  text-align: center;
+  
+  @media (max-width: 500px) {
+    iframe {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Dashboard */
+
+.dashboard {
+  
+  $light:  #cde472;
+  $medium: #7cbe52;
+  $dark:   #1a571b;
+  
+  .q0-9 { fill:rgb(247,251,255); }
+  .q1-9 { fill:rgb(222,235,247); }
+  .q2-9 { fill:rgb(198,219,239); }
+  .q3-9 { fill:rgb(158,202,225); }
+  .q4-9 { fill:rgb(107,174,214); }
+  .q5-9 { fill:rgb(66,146,198); }
+  .q6-9 { fill:rgb(33,113,181); }
+  .q7-9 { fill:rgb(8,81,156); }
+  .q8-9 { fill:rgb(8,48,107); }
+  
+  .available {
+    background: rgb(158,202,225);
+  }
+  
+  .unavailable {
+    background: rgb(33,113,181);
+  }
+  
+  .light {
+    background: $light;
+  }
+  
+  .medium {
+    background: $medium;
+  }
+  
+  .dark {
+    background: $dark;
+  }
+  
+  .legend {
+    margin-bottom: 1.5em;
+    
+    .status {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+  }
+  
+  .status-boxes {
+    display: inline-block;
+    padding: 0 52px;
+  }
+  
+  .status {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 1px 1px;
+    box-sizing: border-box;
+    
+    &:hover {
+      border: 2px solid $black;
+    }
+  }  
+  
+  /**
+   * Tooltip Styles
+   */
+
+  /* Add this attribute to the element that needs a tooltip */
+  .status[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* Hide the tooltip content by default */
+  .status[data-tooltip]:before,
+  .status[data-tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Position tooltip above the element */
+  .status[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -60px;
+    padding: 4px;
+    width: 120px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  /* Triangle hack to make tooltip look like a speech bubble */
+  .status[data-tooltip]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+  }
+  
+  /* Show tooltip content on hover */
+  .status[data-tooltip]:hover:before,
+  .status[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
   }
 }

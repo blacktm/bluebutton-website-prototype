@@ -1,0 +1,11 @@
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/site.js"></script>
+
+{% if page.url == '/dashboard/' %}
+  <script>runDashboard();</script>
+{% endif %}
+
+{% if page.url == '/profile/' %}
+  <script>runProfile();</script>
+{% endif %}

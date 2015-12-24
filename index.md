@@ -16,4 +16,4 @@ For **app developers**, [start building »](/developers)
 
 ---
 
-How are we doing America? [View the score card »](/scorecard)
+See our progress, [view the dashboard »](/dashboard)
