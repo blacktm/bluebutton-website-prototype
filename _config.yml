@@ -1,7 +1,7 @@
 # Site settings
 title: Blue Button
 description: > # this means to ignore newlines until "baseurl:"
-  Blue Button
+  Blue Button, the symbol for access to personal health data
 baseurl: ""
 url: "http://bluebutton.healthit.gov"
 
@@ -29,7 +29,7 @@ edit_page:
   github:
     author: blue-button
     repo:   blue-button.github.io
-    branch: gh-pages
+    branch: master
 
 # Posts
 posts_path: /news
