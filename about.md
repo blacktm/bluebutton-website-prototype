@@ -3,4 +3,4 @@ title: About
 permalink: /about/
 ---
 
-{% include template/sample-content.md %}
+The Blue Button initiative started in 2010, ...

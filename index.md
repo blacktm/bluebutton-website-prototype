@@ -4,7 +4,10 @@ edit_page: false
 css: home
 ---
 
-<p style="font-size: 18px; text-align: center;">Our goal is to ensure all Americans can easily and securely access their own health data, share it with whom they choose, and use it with applications and services they trust.</p>
+<div class="overview">
+  <p>Our goal is to ensure all Americans can easily and securely access their own health data, share it with whom they choose, and use it with applications and services they trust.<p>
+  <div class="get-started"><a href="/get-started">Get Started »</a></div>
+</div>
 
 ---
 
