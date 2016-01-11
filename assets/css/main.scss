@@ -39,6 +39,10 @@ header.site-header {
   img {
     margin-right: 4px;
   }
+  
+  @media (max-width: 400px) {
+    font-size: 11px;
+  }
 }
 
 .working-man {
