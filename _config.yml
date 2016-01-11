@@ -27,9 +27,9 @@ edit_page:
   # enabled: true  # Enabled by default for pages and posts
   text: "Improve this page »"
   github:
-    author: blue-button
-    repo:   blue-button.github.io
-    branch: master
+    author: blacktm
+    repo:   bluebutton.healthit.gov
+    branch: gh-pages
 
 # Posts
 posts_path: /news
