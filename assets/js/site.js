@@ -1,3 +1,6 @@
+---
+layout: null
+---
 
 function getPercent(a, b) {
   return Math.floor((a / b) * 100) + '%';
@@ -31,11 +34,11 @@ function runDashboard() {
     for (var i = 0; i < data.length; i++) {
       // view
       val = data[i].view ? 'available' : 'unavailable';
-      $('#view-status-boxes').append("<a href='/profile/#"+ data[i].id +"'><div class='status "+ val +"' data-tooltip='"+ data[i].name +"' onclick=''></div></a>");
+      $('#view-status-boxes').append("<a href='{{ site.baseurl }}/profile/#"+ data[i].id +"'><div class='status "+ val +"' data-tooltip='"+ data[i].name +"' onclick=''></div></a>");
       
       // download
       val = data[i].download ? 'available' : 'unavailable';
-      $('#download-status-boxes').append("<a href='/profile/#"+ data[i].id +"'><div class='status "+ val +"' data-tooltip='"+ data[i].name +"' onclick=''></div></a>");
+      $('#download-status-boxes').append("<a href='{{ site.baseurl }}/profile/#"+ data[i].id +"'><div class='status "+ val +"' data-tooltip='"+ data[i].name +"' onclick=''></div></a>");
     }
     
   });
