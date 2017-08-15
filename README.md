@@ -1,3 +1,3 @@
 # The Blue Button website
 
-Available at [bluebutton.healthit.gov](http://bluebutton.healthit.gov)
+A prototype of a [new Blue Button website](http://www.blacktm.com/bluebutton-website-prototype)
