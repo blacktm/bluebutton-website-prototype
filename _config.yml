@@ -2,8 +2,8 @@
 title: Blue Button
 description: > # this means to ignore newlines until "baseurl:"
   Blue Button, the symbol for access to personal health data
-baseurl: "/bluebutton.healthit.gov/"
-url: "http://bluebutton.healthit.gov"
+baseurl: "/bluebutton-website-prototype/"
+url: "http://blacktm.com/bluebutton-website-prototype"
 
 # Header
 header:
